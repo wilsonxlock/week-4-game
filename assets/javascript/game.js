@@ -6,10 +6,10 @@ $(document).ready(function() {
     var gem4 = (Math.floor(Math.random()*49)*2);
     var score = 0;
     var wins =0;
-$(".random").html(
-    randomnumber
-)
+    var loss = 0;
+$(".random").html(randomnumber)
 $(".wins").html("Wins " + wins)
+$(".loss").html("loss " + loss)
 $(".roundscore").html(score)
 $(".crys1").on ( "click",function(){
     
@@ -19,11 +19,33 @@ $(".crys1").on ( "click",function(){
         wins++;
         score = 0;
         $(".roundscore").html(score);
-        $(".wins").html("Wins"+ wins)
+        $(".wins").html("Wins"+ wins);
    
-    }
+     randomnumber = Math.floor(Math.random()*200)+20;
+     gem1 = (Math.floor(Math.random()*49)*2)+1;
+     gem2 = (Math.floor(Math.random()*49)*2)+1;
+     gem3 =  Math.floor(Math.random()*10);
+     gem4 = (Math.floor(Math.random()*49)*2);
+     $(".random").html(
+        randomnumber
+    )
 
-  
+    }
+    if (score > randomnumber) { 
+        loss++;
+        score = 0;
+        $(".roundscore").html(score);
+        $(".wins").html("Wins "+ wins);
+        $(".loss").html("Loss " + loss);
+    
+     randomnumber = Math.floor(Math.random()*200)+20;
+     gem1 = (Math.floor(Math.random()*49)*2)+1;
+     gem2 = (Math.floor(Math.random()*49)*2)+1;
+     gem3 =  Math.floor(Math.random()*10);
+     gem4 = (Math.floor(Math.random()*49)*2);
+     $(".random").html(randomnumber)
+    
+    }
      
   })
 $(".crys2").on ( "click",function(){
@@ -34,11 +56,34 @@ $(".crys2").on ( "click",function(){
         wins++;
         score = 0;
         $(".roundscore").html(score);
-        $(".wins").html("Wins"+ wins)
+        $(".wins").html("Wins"+ wins);
    
-    }
+    
+    randomnumber = Math.floor(Math.random()*200)+20;
+    gem1 = (Math.floor(Math.random()*49)*2)+1;
+    gem2 = (Math.floor(Math.random()*49)*2)+1;
+    gem3 =  Math.floor(Math.random()*10);
+    gem4 = (Math.floor(Math.random()*49)*2);
+    $(".random").html(
+        randomnumber
+    )
 
-   
+    }
+    if (score > randomnumber) { 
+        loss++;
+        score = 0;
+        $(".roundscore").html(score);
+        $(".wins").html("Wins "+ wins);
+        $(".loss").html("Loss " + loss);
+    
+     randomnumber = Math.floor(Math.random()*200)+20;
+     gem1 = (Math.floor(Math.random()*49)*2)+1;
+     gem2 = (Math.floor(Math.random()*49)*2)+1;
+     gem3 =  Math.floor(Math.random()*10);
+     gem4 = (Math.floor(Math.random()*49)*2);
+     $(".random").html(randomnumber)
+    
+    }
     
   
      
@@ -51,11 +96,34 @@ $(".crys3").on ( "click",function(){
         wins++;
         score = 0;
         $(".roundscore").html(score);
-        $(".wins").html("Wins"+ wins)
+        $(".wins").html("Wins"+ wins);
+   
+    
+    randomnumber = Math.floor(Math.random()*200)+20;
+    gem1 = (Math.floor(Math.random()*49)*2)+1;
+    gem2 = (Math.floor(Math.random()*49)*2)+1;
+    gem3 =  Math.floor(Math.random()*10);
+    gem4 = (Math.floor(Math.random()*49)*2);
+    $(".random").html(
+        randomnumber
+    )
    
     }
-   
-  
+    if (score > randomnumber) { 
+        loss++;
+        score = 0;
+        $(".roundscore").html(score);
+        $(".wins").html("Wins "+ wins);
+        $(".loss").html("Loss " + loss);
+    
+     randomnumber = Math.floor(Math.random()*200)+20;
+     gem1 = (Math.floor(Math.random()*49)*2)+1;
+     gem2 = (Math.floor(Math.random()*49)*2)+1;
+     gem3 =  Math.floor(Math.random()*10);
+     gem4 = (Math.floor(Math.random()*49)*2);
+     $(".random").html(randomnumber)
+    
+    }
      
   })
 $(".crys4").on ( "click",function(){
@@ -66,8 +134,32 @@ $(".crys4").on ( "click",function(){
         wins++;
         score = 0;
         $(".roundscore").html(score);
-        $(".wins").html("Wins"+ wins)
+        $(".wins").html("Wins"+ wins);
    
+    
+    randomnumber = Math.floor(Math.random()*200)+20;
+    gem1 = (Math.floor(Math.random()*49)*2)+1;
+    gem2 = (Math.floor(Math.random()*49)*2)+1;
+    gem3 =  Math.floor(Math.random()*10);
+    gem4 = (Math.floor(Math.random()*49)*2);
+    $(".random").html(
+        randomnumber
+    )
+    }
+    if (score > randomnumber) { 
+        loss++;
+        score = 0;
+        $(".roundscore").html(score);
+        $(".wins").html("Wins "+ wins);
+        $(".loss").html("Loss " + loss);
+    
+     randomnumber = Math.floor(Math.random()*200)+20;
+     gem1 = (Math.floor(Math.random()*49)*2)+1;
+     gem2 = (Math.floor(Math.random()*49)*2)+1;
+     gem3 =  Math.floor(Math.random()*10);
+     gem4 = (Math.floor(Math.random()*49)*2);
+     $(".random").html(randomnumber)
+    
     }
     
   })

@@ -10,3 +10,16 @@
 .crys4 {
     float: left;
 }
+.totalscore {
+    clear: both;
+}
+.score {
+    clear: both;
+}
+h1 {
+ background-color: lightcoral;
+ height:200px;
+ width: 300px;
+ font-size: 32px;
+ font-weight: bold;
+}
